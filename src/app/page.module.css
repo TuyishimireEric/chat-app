@@ -1,0 +1,123 @@
+/* Chat.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #cccccc34;
+  border-radius: 5px;
+  background-color: #100c0c;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+ }
+ 
+ .title {
+  font-size: 24px;
+  color: #aa9e9e;
+  font-weight: 600;
+  margin-bottom: 12px;
+ }
+ 
+ .result {
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid #cccccc2d;
+  border-radius: 5px;
+  background-color: #2d2223;
+  margin-top: 20px;
+  white-space: pre-wrap; 
+ }
+ 
+ .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+ }
+ 
+ .textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc21;
+  border-radius: 5px;
+ }
+ 
+ .button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #070708;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+ 
+ .button:hover {
+  background-color: #030304;
+ }
+ 
+ .result pre {
+  background-color: #2d1414;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-x: auto;
+ }
+ 
+ .result code {
+  font-family: monospace;
+  font-size: 14px;
+ }
+ 
+
+.over {
+  position: absolute;
+  /* margin: 0; */
+  margin-top: -8vw;
+  width: 100vw;
+  height: 100%;
+}
+
+#loading {
+  z-index: 50;
+  animation: ease-in-out;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+.req {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
